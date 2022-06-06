@@ -7,12 +7,7 @@ import NavMenu from "./NavMenu";
 const Navbar = () => {
   return (
     <AppBar position="sticky" sx={{ justifyContent: "center" }}>
-      <Toolbar
-        sx={{
-          width: "100%",
-          justifyContent: "space-between",
-        }}
-      >
+      <Toolbar sx={{ justifyContent: "space-between" }}>
         <Typography>Katiuska Alicea Web Developer</Typography>
         <NavMenu />
       </Toolbar>
