@@ -4,6 +4,8 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import CssBaseline from "@mui/material/CssBaseline";
+import { ThemeProvider } from "@mui/material/styles";
+import { mainTheme } from "./styles/MainTheme";
 import "@fontsource/roboto/300.css";
 import "@fontsource/roboto/400.css";
 import "@fontsource/roboto/500.css";
@@ -12,8 +14,10 @@ import "@fontsource/roboto/700.css";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <CssBaseline />
-    <App />
+    <CssBaseline />{" "}
+    <ThemeProvider theme={mainTheme}>
+      <App />
+    </ThemeProvider>
   </React.StrictMode>
 );
 
